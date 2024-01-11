@@ -1,8 +1,8 @@
 "use strict";
-function greet(person) {
-    return "Hello " + person.name + " you are " + person.age + " years old today";
+function render(circle) {
+    let width = circle.borderWidth;
+    console.log("circle created");
 }
-console.log(greet({
-    name: "Bhaskar",
-    age: 26
-}));
+render({
+    radius: 10
+});

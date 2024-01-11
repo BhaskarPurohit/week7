@@ -1,14 +1,15 @@
-type Person = {
-    name: string;
-    age: number;
+interface Circle{
+    radius: number;
+    borderWidth?:number;  //optional property
 }
 
-function greet(person: Person){
-    return "Hello " + person.name +" you are "+ person.age +" years old today"
-} 
+function render(circle:Circle){
+    let width: (number | undefined) = circle.borderWidth;
+    console.log("circle created");
+    
 
-console.log(greet({
-    name:"Bhaskar",
-    age:26
-}))
+}
 
+render({
+    radius: 10
+})
