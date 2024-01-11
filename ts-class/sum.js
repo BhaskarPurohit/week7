@@ -1,12 +1,8 @@
 "use strict";
-function details(car) {
+function greet(person) {
+    return "Hello " + person.name + " you are " + person.age + " years old today";
 }
-console.log(details({
-    name: "Q7",
-    horsePower: 12,
-    basics: {
-        engine: 2000,
-        wheels: 4,
-        brand: "Audi"
-    }
+console.log(greet({
+    name: "Bhaskar",
+    age: 26
 }));

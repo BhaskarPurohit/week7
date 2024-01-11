@@ -1,39 +1,14 @@
-interface Car{
-    engine: number;
-    wheels: number;
-    brand: string;
-}
-
-interface Audi{
+type Person = {
     name: string;
-    horsePower: number;
-    basics: Car;
+    age: number;
 }
 
-function details(car: Audi){
+function greet(person: Person){
+    return "Hello " + person.name +" you are "+ person.age +" years old today"
+} 
 
-}
+console.log(greet({
+    name:"Bhaskar",
+    age:26
+}))
 
-console.log(details({
-    name:"Q7",
-    horsePower: 12,
-    basics:{
-        engine: 2000,
-        wheels:4,
-        brand:"Audi"
-    }
-}));
-
-
-//define a type 
-interface Niggs{
-    color: string;
-    height: string;
-    age: number
-}
-
-type Niggas = {
-    name: string;
-    height: string;
-    age: number
-}
